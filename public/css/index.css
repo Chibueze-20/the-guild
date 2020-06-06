@@ -1,0 +1,231 @@
+#Login{
+    border: #dfaa35 2px solid;
+    color: #dfaa35;
+    border-radius: 2px;
+    display: inline-block;
+    font-family: Avenir,lucida grande,tahoma,verdana,arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-left: 8px;
+    padding: 4px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 90px;
+}
+.btn-signup:hover{
+    color: #fff;
+}
+a.nav-link.btn-signup{
+    background-color: #7a1e26;
+    border: #7a1e26 2px solid;
+    border-radius: 2px;
+    display: inline-block;
+    font-family: Avenir,lucida grande,tahoma,verdana,arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-left: 8px;
+    padding: 4px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 90px;
+    color: #dea634;
+}
+ul.nav.justify-content-end{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.title{
+    background-color: #7a1e26;
+    margin-top: 10px;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    border-radius: 2px;
+}
+#title-paragraph{
+    color: #dea634;
+    font-weight: 700;
+    font-size: 7vw;
+    font-family: Avenir,lucida grande,tahoma,verdana,arial,sans-serif;
+}
+#title-button{
+    border: #dfaa35 2px solid;
+    color: #dfaa35;
+    border-radius: 2px;
+    display: inline-block;
+    font-family: Avenir,lucida grande,tahoma,verdana,arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-left: 8px;
+    padding: 4px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    margin-top: 10px;
+}
+.parallax {
+    /* The image used */
+    background-image: url("../images/30632.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2px;
+    /*margin-bottom: 2px;*/
+}
+.clip{
+    background-color: #7a1e26;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    height: 500px;
+    color: #dfaa35;
+    font-size: 2vw;
+    font-family: Verdana,Arial;
+    padding-top: 200px;
+}
+.clip-content{
+    padding-left: 10%;
+}
+#clip-special{
+    padding-left: 10px;
+    padding-top: 30px;
+}
+#clip-bottom{
+    font-family: Verdana,Arial;
+    font-size: 11px;
+    font-style: italic;
+    padding-top: 2vw;
+}
+.fade-anim {
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition: all 1s;
+}
+.fade-anim.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.quote{
+    background-image: url("../images/one_piece.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2px;
+}
+.shanks_pic{
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+blockquote {
+    position: relative;
+    top: -30px;
+    font-weight: 800;
+    color: #dfaa35;
+    background-color: #7a1e26;
+    padding-top: 30px;
+    width: 100%;
+    max-width: 500px;
+    z-index: 1;
+    margin: auto;
+    align-self: center;
+    border: solid thin #dfaa35;
+    box-shadow: 0 12px 35px -11px rgba(0,0,0,0.4);
+    text-align: center;
+    border-radius: 4px;
+    transition: all 1s;
+    padding-bottom: 10px;
+}
+blockquote:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    content: "\f10d";
+    color: rgb(233, 30, 99);
+    font-size: 4rem;
+    line-height: 0;
+    top: -10px;
+    left: 30px;
+}
+blockquote:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    content:"\f10e";
+    color: #e91e63;
+    font-size: 4rem;
+    line-height: 0;
+    bottom: -10px;
+    right: 30px;
+}
+blockquote:hover{
+    background: #2d213f;
+    color: #fff;
+}
+.quote_info{
+    margin-top: 1.6rem;
+}
+#quote-bottom{
+    clip-path: polygon(49% 71%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+    background-color: #7a1e26;
+    position: relative;
+    font-weight: 800;
+    color: #dfaa35;
+    width: 100%;
+    text-align: left;
+}
+.quote-bottom--left{
+    font-weight: 900;
+    padding-top: 225px;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+#quote-bottom--right{
+    font-weight: 900;
+    text-align: right;
+    padding-right: 10px;
+}
+.highlight{
+    background: url("../images/crunch_logo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+#page-footer{
+    background-color: #dea634;
+    border-radius: 2px;
+}
+#footer-copyright{
+    background-color: #7a1e26;
+    color: #dea634;
+    font-weight: bold;
+}
+
+.highlight-text{
+    font-weight: 900;
+}
+.contact{
+    background-color: #7a1e26;
+    color: #dea634;
+    border-radius: 2px;
+}
+
+.contact-text{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
