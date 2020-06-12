@@ -33,10 +33,22 @@
 
 	<div class="limiter">
 		<div class="container-login100">
+
 			<div class="login100-more" style="background-image: url('{{ asset("images/anime.jpg") }}');"></div>
 
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
-				<form class="login100-form validate-form">
+			@if (Session::has('error'))
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert" style="padding-bottom: 20px; padding-right: 5px;">
+                            <h4 class="alert-heading">Error!</h4>
+                            <p>{{ Session::get('error') }}</p>
+
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    @endif
+				<form method="POST" action="login" class="login100-form validate-form">
+				{{ csrf_field() }}
 					<span class="login100-form-title p-b-59">
 						Login
 					</span>
@@ -50,7 +62,7 @@
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="text" name="pass" placeholder="*************">
+						<input class="input100" type="text" name="password" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -58,7 +70,7 @@
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn hov2">
+							<button type="submit" class="login100-form-btn hov2">
 								Login
 							</button>
 						</div>
